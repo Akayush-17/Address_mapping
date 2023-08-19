@@ -1,0 +1,10 @@
+<div style="display:flex;flex:flex-wrap;justify-content: space-between;" class="profile-list">
+  <div *ngFor="let profile of profiles" class="profile-item">
+    <img style="height:300px;border-radius:50%;width:300px" [src]="profile.photo" alt="{{ profile.name }}" class="profile-photo">
+    <div class="profile-details">
+      <h3>{{ profile.name }}</h3>
+      <p>{{ profile.description }}</p>
+      <a [routerLink]="['/map']" [queryParams]="{ address: profile.address }">Summary</a>
+    </div>
+  </div>
+</div>

@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
             "outputPath": "dist/profile-mapping-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "faf8a3ef-a36e-4809-a2ae-e714b5559b79"
   }
 }
